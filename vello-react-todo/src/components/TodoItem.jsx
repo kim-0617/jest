@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const TodoItem = ({ todo, onToggle, onRemove }) => {
   const { id, text, done } = todo;
@@ -18,4 +18,4 @@ const TodoItem = ({ todo, onToggle, onRemove }) => {
   );
 };
 
-export default TodoItem;
+export default memo(TodoItem);
